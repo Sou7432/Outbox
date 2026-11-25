@@ -277,3 +277,5 @@ Use this script when recording your 5-minute Loom/video demonstration:
   - `Yadav036`
 - **Submission Form:** Completed at [ClickUp Assignment Submission](https://forms.clickup.com/9005062261/f/8cbwp3n-8876/6NNNJ92DV93PQTAYST)
 - **Built with ❤️ for ReachInbox / Outbox Labs**
+#   O u t b o x  
+ 

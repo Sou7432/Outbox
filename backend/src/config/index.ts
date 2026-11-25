@@ -4,7 +4,7 @@ dotenv.config();
 export const config = {
   port: parseInt(process.env.PORT || '5000', 10),
   redisUrl: process.env.REDIS_URL || 'redis://127.0.0.1:6379',
-  databaseUrl: process.env.DATABASE_URL || 'postgresql://postgres:postgres@localhost:5432/reachinbox_scheduler?schema=public',
+  databaseUrl: process.env.DATABASE_URL || 'file:./dev.db',
   elasticsearchUrl: process.env.ELASTICSEARCH_URL || 'http://localhost:9200',
   
   // Rate limiting & Worker concurrency

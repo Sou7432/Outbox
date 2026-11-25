@@ -149,9 +149,9 @@ export class EmailService {
         whereClause = {
           ...whereClause,
           OR: [
-            { recipient: { contains: search, mode: 'insensitive' } },
-            { subject: { contains: search, mode: 'insensitive' } },
-            { senderEmail: { contains: search, mode: 'insensitive' } },
+            { recipient: { contains: search } },
+            { subject: { contains: search } },
+            { senderEmail: { contains: search } },
           ],
         };
       }
@@ -206,9 +206,9 @@ export class EmailService {
         whereClause = {
           ...whereClause,
           OR: [
-            { recipient: { contains: search, mode: 'insensitive' } },
-            { subject: { contains: search, mode: 'insensitive' } },
-            { senderEmail: { contains: search, mode: 'insensitive' } },
+            { recipient: { contains: search } },
+            { subject: { contains: search } },
+            { senderEmail: { contains: search } },
           ],
         };
       }
@@ -249,9 +249,9 @@ export class EmailService {
     // PostgreSQL fallback
     const where: any = {
       OR: [
-        { recipient: { contains: query, mode: 'insensitive' } },
-        { subject: { contains: query, mode: 'insensitive' } },
-        { senderEmail: { contains: query, mode: 'insensitive' } },
+        { recipient: { contains: query } },
+        { subject: { contains: query } },
+        { senderEmail: { contains: query } },
       ],
     };
     if (status) {
